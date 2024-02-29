@@ -1,0 +1,105 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.home-container::before{
+  content: "";
+  background: url('../assets/blackHole6.gif');
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content-container {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 2rem;
+  margin:20px;
+}
+
+.home-text {
+  font-size: 1.2rem;
+}
+
+hr{
+  margin:40px;
+}
+
+.content-container .btn{
+  margin: 1rem 0.2rem;
+}
+
+.content-container .lgn {
+  padding: 12px 45px;
+}
+
+.login-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.login-register-container::before{
+  content: "";
+  background: url('../assets/blackHole6.gif');
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.login-register-title {
+  margin-bottom: 20px;
+}
+
+.login-register-body {
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.login-register-body form{
+  padding: 2rem;
+}
+
+.login-register-body form div {
+  margin-bottom: 10px;
+}
+
+.login-register-body form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-register-body form input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-register-body p{
+  font-size: 1rem;
+  padding: 0;
+}
