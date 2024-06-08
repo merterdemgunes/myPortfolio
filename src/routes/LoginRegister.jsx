@@ -1,8 +1,18 @@
 // LoginRegister.jsx
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import "../components/RegisterLoginStyles.css";
+import { useNavigate } from 'react-router-dom';
 
-const LoginRegister = () => {
+const LoginRegister = ({ auth }) => {
+
+  const navigateTo = useNavigate();
+
+  useEffect(() => {
+    if (auth.token) {
+      navigateTo('/home');
+    }
+  }, [auth]);
+
   return (
     <div className="home-container">
         <div className="content-container">

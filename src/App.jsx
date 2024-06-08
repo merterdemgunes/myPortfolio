@@ -27,7 +27,7 @@ function App() {
     <Router>
       <>
         <Routes>
-          <Route path = "/" element ={<LoginRegister/>}/>
+          <Route path = "/" element ={<LoginRegister auth = {auth}/>}/>
           <Route path = "/login" element ={<Login setAuth={setAuth}/>}/>
           <Route path = "/register" element ={<Register/>}/>
           <Route path = "/logout" element ={<LogOut setAuth={setAuth}/>}/>

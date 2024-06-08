@@ -13,7 +13,7 @@ env.config();
 
 app.use(bodyParser.json());
 app.use(cors());
-//Client 
+//Client
 const db = new pg.Pool({
   user: process.env.PG_USER,
   host: process.env.PG_HOST,
@@ -21,6 +21,7 @@ const db = new pg.Pool({
   password: process.env.PG_PASSWORD,
   port: process.env.PG_PORT,
 });
+
 db.connect();
 
 app.post("/register", async (req, res) => {
@@ -28,7 +29,7 @@ app.post("/register", async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const checkResult = await db.query("SELECT * FROM users WHERE email = $1", [
+    const checkResult = await db.query("SELECT * FROM user_data WHERE email = $1", [
       email,
     ]);
 
@@ -42,7 +43,7 @@ app.post("/register", async (req, res) => {
         } else {
           console.log("Hashed Password:", hash);
           await db.query(
-            "INSERT INTO users (email, password) VALUES ($1, $2)",
+            "INSERT INTO user_data (email, password) VALUES ($1, $2)",
             [email, hash]
           );
           return res.json({ success: true, message: 'Registration successful' });        }
@@ -60,7 +61,7 @@ app.post("/login", async (req, res) => {
   let loginPassword = password;
 
   try {
-    const result = await db.query("SELECT * FROM users WHERE email = $1", [
+    const result = await db.query("SELECT * FROM user_data WHERE email = $1", [
       email,
     ]);
     if (result.rows.length > 0) {
@@ -100,12 +101,12 @@ app.listen(port, () => {
 import nodemailer from 'nodemailer';
 
 const app1 = express();
-const port1 = 3001;
+const port1 = process.env.PG_PORT || 3001;
 
 app1.use(bodyParser.json());
 app1.use(cors());
 
-app1.post('/contact', (req, res) => {
+app.post('/contact', (req, res) => {
     const { to, subject, text } = req.body;
 
     const transporter = nodemailer.createTransport({

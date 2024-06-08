@@ -6,7 +6,6 @@
 }
 
 .cont img{
-    content: "";
     background-position: center top;
     width:100%;
     height:100%;
@@ -28,17 +27,22 @@
     align-items: center;
 }
 
-.hero-img h1{
-    font-size: 2.4rem;
+.cont h1{
+    font-size: 3.4rem;
 }
 
-.hero-img p{
-    font-size: 1.4rem;
+.cont p{
+    font-size: 1.8rem;
     text-align: center;
 }
 
-@media screen and (max-width: 640px){
-    .hero-img h1{
-        font-size: 2rem;
+@media screen and (max-width: 1000px){    
+    .cont h1{
+        font-size: 2.4rem;
+    }
+
+    .cont p{
+        font-size: 1.2rem;
+        text-align: center;
     }
 }

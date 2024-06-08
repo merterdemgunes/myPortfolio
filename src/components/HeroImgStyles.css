@@ -54,7 +54,7 @@
   object-fit: cover; 
 }
 
-@media screen and (max-width: 844px){
+@media screen and (max-width: 1000px){
     .hero .content h1{
         font-size: 2rem;
     }

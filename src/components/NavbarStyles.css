@@ -32,7 +32,12 @@
     display:none;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1000px) {
+    .header{
+        padding: 5rem;
+        height: 140px;
+    }
+
     .nav-menu{
         flex-direction: column;
         justify-content: center;
@@ -48,6 +53,7 @@
     }
 
     .nav-menu.active {
+        transform:scale(1.9);
         right:0;  
     }
 
@@ -60,5 +66,6 @@
 
     .hamburger{
         display:initial;
+        transform: scale(1.5);
     }
 }

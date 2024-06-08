@@ -18,8 +18,7 @@ const Footer = () => {
                 <HomeIcon fontSize = "large" 
                   style={{ marginRight: "2rem", color: 'white' }}/>
                 <p>
-                Feriköy Neighborhood, Murat
-                Apartment, Gediz St
+                 Şişli/İstanbul
                 </p>  
               </div>
               <div className="item"> 
@@ -36,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div className="right"> 
-          <h4>About me</h4>
+          <h4>Find me online</h4>
           <p>These are my web sites</p>
           <div className="social">
           <a href="https://www.linkedin.com/in/merterdemgunes/">

@@ -12,7 +12,7 @@ const ProjectCardData = [
         source: "https://github.com/merterdemgunes/project-study-02"
     },
     {
-        imgsrc: "https://assets.materialup.com/uploads/95178fb1-1e80-47f2-b72b-6f6a3cd92e93/preview.png",
+        imgsrc: "https://hips.hearstapps.com/hmg-prod/images/best-kid-apps-1648567497.jpg",
         title: "Kid Mobile Application",
         detail: "Mobile application I developed using Java language was a project on Android Studio that offered options such as games and learning for children. Additionally, I integrated Firebase to allow users to login and register.",
         source: "https://github.com/merterdemgunes/project-study-04"

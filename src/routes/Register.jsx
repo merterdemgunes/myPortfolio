@@ -5,6 +5,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+//const response = await axios.post('http://localhost:3000/register', { email, password });
+
 const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -16,7 +18,7 @@ const Register = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3000/register', { email, password });
+            const response = await axios.post('https://webservice-for-database-2.onrender.com/register', { email, password });
             setMessage(response.data.message);
             if(response.data.success){
               navigateTo("/login");
@@ -41,12 +43,14 @@ const Register = () => {
                         <div>
                             <label htmlFor="email">Email</label>
                             <input onChange = {(e) => {setEmail(e.target.value)}} 
-                            type="email" name="username" value={email}/>
+                            type="email" name="username" value={email} 
+                            />
                         </div>
                         <div>
                             <label htmlFor="password">Password</label>
                             <input onChange = {(e) => {setPassword(e.target.value)}}  
-                            type="password" name="password" value={password}/>
+                            type="password" name="password" value={password}
+                            />
                         </div>
                         <button type="submit" className="btn">Register</button>
                     </form>

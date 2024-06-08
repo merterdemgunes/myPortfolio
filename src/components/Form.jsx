@@ -2,6 +2,8 @@ import "./FormStyles.css";
 import React, { useState } from 'react';
 import axios from 'axios';
 
+//await axios.post('http://localhost:3001/contact'
+
 const Form = () => {
     const [name, setName] = useState('');
     const [to, setTo] = useState('');
@@ -13,7 +15,7 @@ const Form = () => {
         e.preventDefault();
 
         try {
-            await axios.post('http://localhost:3001/contact', {
+            await axios.post('https://webservice-for-database-2.onrender.com/contact', {
                 to: to,
                 subject: subject,
                 text: 
@@ -30,7 +32,7 @@ const Form = () => {
 
         //-----------------------TO MYSELF !
         try {
-            await axios.post('http://localhost:3001/contact', {
+            await axios.post('https://webservice-for-database-2.onrender.com/contact', {
                 to: import.meta.env.VITE_MY_EMAIL,
                 subject: subject,
                 text: "Name: " + name + "\n" +

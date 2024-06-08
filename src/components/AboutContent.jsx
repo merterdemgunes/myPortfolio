@@ -11,7 +11,7 @@ const AboutContent = () => {
             <br/>
             <br/>
 
-            Proficient in languages such as C++, Python, Java, HTML, CSS, SQL, React.js, JavaScript, Node.js, I am equipped with a diverse skill set to tackle complex challenges in the field of computer engineering. Beyond technical skills, I am fluent in Turkish, proficient in English, and have a basic understanding of German.
+            Proficient in C++, Python, Java, and knowledgeable in HTML, CSS, SQL, React.js, JavaScript, and Node.js, I am equipped with a diverse skill set to tackle complex challenges in the field of computer engineering. Beyond technical skills, I am fluent in Turkish, proficient in English, and have a basic understanding of German.
             </p>
         </div>
         <div className="right">

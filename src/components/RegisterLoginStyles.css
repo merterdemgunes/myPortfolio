@@ -44,6 +44,8 @@ hr{
   padding: 12px 45px;
 }
 
+/*--------------------------------------------------------------------------------*/
+
 .login-register-container {
   display: flex;
   justify-content: center;
@@ -102,4 +104,68 @@ hr{
 .login-register-body p{
   font-size: 1rem;
   padding: 0;
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .home-title {
+    font-size: 4rem;
+    margin:30px;
+  }
+  
+  .home-text {
+    font-size: 2.2rem;
+  }
+
+  .content-container .btn {
+    margin: 0.5rem 1.4rem;
+    font-size: 2.5rem;
+  }
+
+  .content-container .lgn {
+    padding: 12px 65px;
+  }
+
+  /*-----------------------------------------------------------*/
+
+  .login-register-title {
+    font-size: 70px;
+  }
+  
+  .login-register-body {
+    font-size: 25px;
+  }
+
+  .login-register-body form{
+    padding: 6rem;
+  }
+  
+  .login-register-body form div {
+    margin-bottom: 60px;
+  }
+  
+  .login-register-body form label {
+    margin-bottom: 25px;
+  }
+  
+  .login-register-body form input {
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 18px;
+  }
+  
+  .login-register-body p{
+    font-size: 2rem;
+  }
+
+  .login-register-body .btn {
+    margin: 0.5rem 1.4rem;
+    font-size: 2.5rem;
+  }
+
+  .login-register-body .lgn {
+    padding: 12px 65px;
+  }
 }
