@@ -1,6 +1,5 @@
 # Explanation
 
-React.js ve Node.js kullanarak oluşturduğum bu web sitesi, kullanıcı kimlik
-doğrulama ve kayıt olma gibi özellikleri barındırıyor. Ayrıca, hakkımda bilgi
-içeren sayfalarım da mevcut ve benimle iletişime geçmek için bu web
-sitesini kullanabilirsiniz.
+Created a website using React.js and Node.js. The website features user
+authentication and registration functionalities. Additionally, it includes pages
+containing information about me, serving as a platform for contacting me.
