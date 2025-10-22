@@ -24,7 +24,7 @@ const Footer = () => {
               <div className="item"> 
                 <PhoneIcon fontSize = "large" 
                   style={{ marginRight: "2rem", color: 'white' }}/>
-                <h4>+90 532 723 90 85</h4> 
+                <h4>+90 533 029 55 34</h4> 
               </div>
               <div className="item"> 
                 <EmailIcon fontSize = "large" 

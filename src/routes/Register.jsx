@@ -18,7 +18,7 @@ const Register = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://webservice-for-database-2.onrender.com/register', { email, password });
+            const response = await axios.post('https://webservice-for-database-2-a.onrender.com/register', { email, password });
             setMessage(response.data.message);
             if(response.data.success){
               navigateTo("/login");

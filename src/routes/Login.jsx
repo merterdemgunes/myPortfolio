@@ -19,7 +19,7 @@ const Login = ({ setAuth }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const response = await axios.post('https://webservice-for-database-2.onrender.com/login', { email, password });
+          const response = await axios.post('https://webservice-for-database-2-a.onrender.com/login', { email, password });
           setMessage(response.data.message);
           if(response.data.success){
             setAuth({ token: true });

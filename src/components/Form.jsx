@@ -15,7 +15,7 @@ const Form = () => {
         e.preventDefault();
 
         try {
-            await axios.post('https://webservice-for-database-2.onrender.com/contact', {
+            await axios.post('https://webservice-for-database-2-a.onrender.com/contact', {
                 to: to,
                 subject: subject,
                 text: 
@@ -32,7 +32,7 @@ const Form = () => {
 
         //-----------------------TO MYSELF !
         try {
-            await axios.post('https://webservice-for-database-2.onrender.com/contact', {
+            await axios.post('https://webservice-for-database-2-a.onrender.com/contact', {
                 to: import.meta.env.VITE_MY_EMAIL,
                 subject: subject,
                 text: "Name: " + name + "\n" +
