@@ -1,0 +1,48 @@
+.cont{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height:60vh;
+    position: relative;
+}
+
+.cont img{
+    background-position: center top;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont h1{
+    font-size: 3.4rem;
+}
+
+.cont p{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){    
+    .cont h1{
+        font-size: 2.4rem;
+    }
+
+    .cont p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
